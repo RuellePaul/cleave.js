@@ -2763,7 +2763,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 
 	    getActiveElement: function getActiveElement(parent) {
-	        var activeElement = parent.activeElement;
+            console.info(parent)
+	        var activeElement = parent?.activeElement;
 	        if (activeElement && activeElement.shadowRoot) {
 	            return this.getActiveElement(activeElement.shadowRoot);
 	        }
