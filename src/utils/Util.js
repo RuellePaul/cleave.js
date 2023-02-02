@@ -241,7 +241,8 @@ var Util = {
     },
 
     getActiveElement: function(parent) {
-        var activeElement = parent.activeElement;
+        console.info(parent)
+        var activeElement = parent?.activeElement;
         if (activeElement && activeElement.shadowRoot) {
             return this.getActiveElement(activeElement.shadowRoot);
         }
